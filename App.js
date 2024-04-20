@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './screens/HomeScreen';
 import MedicalHistoryScreen from './screens/MedicalHistoryScreen';
 import ScheduleAppointmentScreen from './screens/ScheduleAppointmentScreen';
+import AboutUsScreen from './screens/AboutUsScreen';
 
 const Stack = createStackNavigator();
 
@@ -14,6 +15,7 @@ export default function App() {
         <Stack.Screen name="Home" component={HomeScreen} options={{headerShown:false }} />
         <Stack.Screen name="MedicalHistory" component={MedicalHistoryScreen} options={{ title: 'Meu Histórico Médico' }} />
         <Stack.Screen name="ScheduleAppointment" component={ScheduleAppointmentScreen} options={{ title: 'Agendar uma Consulta' }} />
+        <Stack.Screen name="AboutUs" component={AboutUsScreen} options={{title : 'Sobre nós'}} />
       </Stack.Navigator>
     </NavigationContainer>
   );
